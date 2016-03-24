@@ -1,0 +1,34 @@
+{
+  "globals": {
+    "SpreadsheetApp", true,
+    "GSUnit", true,
+    "Logger", true
+  },
+  "extends": "eslint:recommended",
+  "strict": 2,
+  "env": {
+    "es6": true
+  },
+  "rules": {
+    "semi": 2,
+    "arrow-parens": 2,
+    "arrow-spacing": 2,
+    "constructor-super": 2,
+    "generator-star-spacing": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-empty-pattern": 2,
+    "no-this-before-super": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "prefer-reflect": 2,
+    "prefer-spread": 2,
+    "prefer-template": 2,
+    "require-yield": 2,
+    "no-unused-vars": [2, {"varsIgnorePattern": "^_"}],
+    "no-console": 0
+  }
+}
