@@ -1,6 +1,6 @@
 "use strict";
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var createClass_ = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 function classCallCheck_(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -289,7 +289,7 @@ var Token_ = (function () {
     this.kind = this._checkKind(value);
   }
 
-  _createClass(Token_, [{
+  createClass_(Token_, [{
     key: "_checkKind",
     value: function _checkKind(value) {
       switch (value) {
@@ -333,7 +333,7 @@ var SpreadSheetsSQL_ = (function () {
     this.sheet_ = SpreadsheetApp.openById(id).getSheetByName(name);
   }
 
-  _createClass(SpreadSheetsSQL_, [{
+  createClass_(SpreadSheetsSQL_, [{
     key: "data_",
     value: function data_() {
       if (this.sheet_.getLastRow() <= 1 || this.sheet_.getLastColumn() <= 0) {
