@@ -104,7 +104,7 @@ SpreadSheetsSQL.open(id, name).resizeToFit();
 
 # Document
 
-Look at [Detail Document](https://script.google.com/macros/library/d/17p1ghyOkbWOhdE4bdBFhOXL079I-yt5xd0LAi00Zs5N-bUzpQtN7iT1a/6)
+Look at [Detail Document](https://script.google.com/macros/library/d/17p1ghyOkbWOhdE4bdBFhOXL079I-yt5xd0LAi00Zs5N-bUzpQtN7iT1a/9)
 
 # License
 
