@@ -109,7 +109,7 @@ Look at [Detail Document](https://script.google.com/macros/library/d/17p1ghyOkbW
 # License
 
 ```
-Copyright 2016 Kaoru Tsutsumishita
+Copyright 2016-2017 Kaoru Tsutsumishita
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
