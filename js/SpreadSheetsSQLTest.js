@@ -126,7 +126,7 @@ function testInsert_() {
     open(SPREADSHEET_ID, 'test-other').select(['name', 'age', 'married', 'company']).result().length,
     preCount + insertDatas.length);
 
-  Logger.log('start: test-insert');
+  Logger.log('finish: test-insert');
 }
 
 function testDelete_() {

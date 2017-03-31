@@ -1,4 +1,7 @@
 .envrc
+gas-config.json
+gas-project.json
+README-local.md
 
 # Created by https://www.gitignore.io/api/osx,node
 
@@ -64,4 +67,3 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
-

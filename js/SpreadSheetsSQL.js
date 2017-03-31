@@ -191,7 +191,6 @@ function insertRows(data) {
  */
 function updateRows(data, filter) {
   throw new Error("it's a mock method for content assist");
-  A
 }
 
 /**
@@ -375,7 +374,7 @@ class SpreadSheetsSQL_ {
       if (parts.length === 2) {
         node = new Node_(new Token_(splitString), this.parseNode_(parts[0]), this.parseNode_(parts[1]));
 
-      } else { 
+      } else {
         // OR,ANDが2つ以上ある場合の対処:初めのOR,ANDで2つに区切る
         let rightPart = '';
         for (let i = 1, len = parts.length; i < len; i++) {
@@ -453,15 +452,12 @@ class SpreadSheetsSQL_ {
 
   orderBy(orderBy, asc = true) {
     for (let i = 0, iLen = orderBy.length; i < iLen; i++) {
-    // }
-    // for (let j = 0, jLen = this.result_.length; j < jLen; j++) {
       this.result_.sort((a, b) => {
         if (a[orderBy[i]] < b[orderBy[i]]) return asc ? -1 : 1;
         if (a[orderBy[i]] > b[orderBy[i]]) return asc ? 1 : -1;
         return 0;
       });
     }
-    // }
 
     return this;
   }
@@ -539,4 +535,3 @@ class SpreadSheetsSQL_ {
   }
 
 }
-

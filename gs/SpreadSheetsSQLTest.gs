@@ -88,7 +88,7 @@ function testInsert_() {
 
   GSUnit.assertEquals('Check Inserted Data Length', open(SPREADSHEET_ID, 'test-other').select(['name', 'age', 'married', 'company']).result().length, preCount + insertDatas.length);
 
-  Logger.log('start: test-insert');
+  Logger.log('finish: test-insert');
 }
 
 function testDelete_() {

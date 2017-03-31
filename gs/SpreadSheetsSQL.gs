@@ -1,6 +1,6 @@
 "use strict";
 
-var createClass_ = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 function classCallCheck_(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -197,7 +197,6 @@ function insertRows(data) {
  */
 function updateRows(data, filter) {
   throw new Error("it's a mock method for content assist");
-  A;
 }
 
 /**
@@ -290,7 +289,7 @@ var Token_ = (function () {
     this.kind = this._checkKind(value);
   }
 
-  createClass_(Token_, [{
+  _createClass(Token_, [{
     key: "_checkKind",
     value: function _checkKind(value) {
       switch (value) {
@@ -334,7 +333,7 @@ var SpreadSheetsSQL_ = (function () {
     this.sheet_ = SpreadsheetApp.openById(id).getSheetByName(name);
   }
 
-  createClass_(SpreadSheetsSQL_, [{
+  _createClass(SpreadSheetsSQL_, [{
     key: "data_",
     value: function data_() {
       if (this.sheet_.getLastRow() <= 1 || this.sheet_.getLastColumn() <= 0) {
@@ -480,8 +479,6 @@ var SpreadSheetsSQL_ = (function () {
       var asc = arguments.length <= 1 || arguments[1] === undefined ? true : arguments[1];
 
       var _loop = function (i, iLen) {
-        // }
-        // for (let j = 0, jLen = this.result_.length; j < jLen; j++) {
         _this.result_.sort(function (a, b) {
           if (a[_orderBy[i]] < b[_orderBy[i]]) return asc ? -1 : 1;
           if (a[_orderBy[i]] > b[_orderBy[i]]) return asc ? 1 : -1;
@@ -492,7 +489,6 @@ var SpreadSheetsSQL_ = (function () {
       for (var i = 0, iLen = _orderBy.length; i < iLen; i++) {
         _loop(i, iLen);
       }
-      // }
 
       return this;
     }
