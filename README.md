@@ -1,5 +1,8 @@
 # SpreadSheetsSQL
 
+***No further development, Issue, PullRequest or maintenance will be performed.***  
+***Please use within the scope of the license.***
+
 SpreadSheetsSQL is GoogleAppsScript Library.  
 If you use GoogleSpreadSheets as the database on GoogleAppsScript, can be written in Like SQL.
 
